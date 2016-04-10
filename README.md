@@ -8,11 +8,12 @@ In this project  technologies  including
 + JQuery
 + Bootstrap
 + Css
-
++ gson
 
 TODO:(will be implemented)
 - AlpacaJs
 - AngularJs
 - tiles
 - hibernate
-- gson
+- oauth
+- login with database
