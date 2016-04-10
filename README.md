@@ -4,6 +4,7 @@ In this project  technologies  including
 + Java
 + Spring
 + Maven
++ logback
 
 
 TODO:(will be implemented)
@@ -12,6 +13,5 @@ TODO:(will be implemented)
 - AngularJs
 - Bootstrap
 - Css
-- logback
 - tiles
 - hibernate
