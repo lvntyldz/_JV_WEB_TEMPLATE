@@ -15,3 +15,4 @@ TODO:(will be implemented)
 - AngularJs
 - tiles
 - hibernate
+- gson

@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
 <%--styles--%>
@@ -12,18 +13,22 @@
 
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/util.js"></script>
 
+<head>
+    <title>Sample Ajax Call</title>
+</head>
 <body>
-	<h5>${message}</h5>
 
-    <div class="container">
-        <h2>Button Styles</h2>
-        <button type="button" class="btn btn-default">Default</button>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-link">Link</button>
-    </div>
+<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn btn-default">GET</button>
+  <button type="button" class="btn btn-primary">POST</button>
+  <button type="button" class="btn btn-success">PUT</button>
+  <button type="button" class="btn btn-danger">DELETE</button>
+</div>
+
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/views/samples/ajaxcall.js"></script>
+
+
 </body>
 </html>
