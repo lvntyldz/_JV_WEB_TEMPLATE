@@ -6,16 +6,16 @@
 UTIL = {};
 
 //base URL
-UTIL.url = "http://172.20.10.2:8080";//Mobile
+UTIL.url = "http://localhost:8080";
 
 // request types
-UTIL.request = new Object();
+UTIL.request = {};
 
 // data types
-UTIL.dataType = new Object();
+UTIL.dataType = {};
 
 // content types
-UTIL.contentType = new Object();
+UTIL.contentType = {};
 
 UTIL.request.get = 'GET';
 UTIL.request.post = 'POST';
@@ -28,15 +28,15 @@ UTIL.dataType.xml = 'xml';
 UTIL.contentType.json = 'application/json; charset=utf-8';
 
 UTIL.ajax = {
-    get: function (url, data, done, fail) {
+    get: function (url, data, success, error) {
         $.ajax({
-            url: url,
             type: UTIL.request.get,
-            data: data,
+            url: UTIL.url + url,
+            cache: false,
             dataType: UTIL.dataType.json,
-            success: done,
-            error: fail
-        });
+            data: (data),
+            contentType: UTIL.contentType.json
+        }).done(success).fail(error);
     },
     post: function (url, data, success, error) {
         $.ajax({
@@ -49,29 +49,22 @@ UTIL.ajax = {
         }).done(success).fail(error);
     },
     put: function (url, data, success, error) {
-        var k = '_method', v = 'PUT';
-        var headers = {};
-        headers[k] = v;
         $.ajax({
             type: UTIL.request.put,
-            url: url,
+            url: UTIL.url + url,
             cache: false,
-            headers: headers,
             dataType: UTIL.dataType.json,
             data: JSON.stringify(data),
             contentType: UTIL.contentType.json
         }).done(success).fail(error);
     },
-    del: function (url, success, error) {
-        var k = '_method', v = 'DELETE';
-        var headers = {};
-        headers[k] = v;
+    del: function (url, data, success, error) {
         $.ajax({
             type: UTIL.request.del,
-            url: url,
+            url: UTIL.url + url,
             cache: false,
-            headers: headers,
             dataType: UTIL.dataType.json,
+            data: JSON.stringify(data),
             contentType: UTIL.contentType.json
         }).done(success).fail(error);
     },

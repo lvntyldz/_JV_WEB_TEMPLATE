@@ -11,12 +11,15 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/components/js/bootstrap/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/util.js"></script>
+<script type="text/javascript">
+    UTIL.url = "${pageContext.request.contextPath}";
+</script>
 
 <body>
     <div class="container">
         <h2>Samples</h2>
 
-        <a href="${pageContext.request.contextPath}/ajax/get" class="btn btn-primary"> AJAX Examples </a>
+        <a href="${pageContext.request.contextPath}/ajax" class="btn btn-primary"> AJAX Examples </a>
 
         <a href="${pageContext.request.contextPath}" class="btn btn-default">Default</a>
         <a href="${pageContext.request.contextPath}"  class="btn btn-success">Success</a>
@@ -25,5 +28,8 @@
         <a href="${pageContext.request.contextPath}"  class="btn btn-danger">Danger</a>
         <a href="${pageContext.request.contextPath}"  class="btn btn-link">Link</a>
     </div>
+
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/views/main/default.js"></script>
+
 </body>
 </html>
