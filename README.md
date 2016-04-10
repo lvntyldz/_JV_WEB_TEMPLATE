@@ -5,13 +5,13 @@ In this project  technologies  including
 + Spring
 + Maven
 + logback
++ JQuery
++ Bootstrap
++ Css
 
 
 TODO:(will be implemented)
-- JQuery
 - AlpacaJs
 - AngularJs
-- Bootstrap
-- Css
 - tiles
 - hibernate
