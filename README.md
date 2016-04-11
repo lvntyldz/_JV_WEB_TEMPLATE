@@ -17,3 +17,8 @@ TODO:(will be implemented)
 - hibernate
 - oauth
 - login with database
+- quartz 
+- mail service(smtp - send mail)
+- file chooser
+- file service
+- time service
