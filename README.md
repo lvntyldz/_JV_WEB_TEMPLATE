@@ -13,6 +13,7 @@ In this project  technologies  including
 TODO:(will be implemented)
 - AlpacaJs
 - AngularJs
+- react js
 - tiles
 - hibernate
 - oauth
